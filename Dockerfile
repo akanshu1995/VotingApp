@@ -4,10 +4,10 @@ FROM maven:3.8.6-eclipse-temurin-17 AS build
 WORKDIR /app
 
 # Copy project files to the container
-COPY . .
+COPY voting-app-job/MySpring_Boot_aa23v_VotingApp_Final /app
 
 # Build the application
-RUN cd MySpring_Boot_aa23v_VotingApp_Final && mvn clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 # Stage 2: Create a runtime image
 FROM eclipse-temurin:17-jdk-alpine
