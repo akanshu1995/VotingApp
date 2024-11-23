@@ -4,7 +4,7 @@ FROM maven:3.8.6-eclipse-temurin-17 AS build
 WORKDIR /app
 
 # Copy project files to the container
-COPY VotingApp/MySpring_Boot_aa23v_VotingApp_Final /app
+COPY . .
 
 # Build the application
 RUN mvn clean package -DskipTests
