@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 
 # Build the application
-RUN mvn clean package -DskipTests
+RUN cd MySpring_Boot_aa23v_VotingApp_Final && mvn clean package -DskipTests
 
 # Stage 2: Create a runtime image
 FROM eclipse-temurin:17-jdk-alpine
