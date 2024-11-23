@@ -22,8 +22,8 @@ EXPOSE 8080
 
 # Set the environment variables for Spring Boot to use
 ENV SPRING_DATASOURCE_URL=jdbc:mysql://mysqldb:3306/zinterview?serverTimezone=UTC \
-    SPRING_DATASOURCE_USERNAME=ubuntu \
-    SPRING_DATASOURCE_PASSWORD=ubuntu \
+    SPRING_DATASOURCE_USERNAME=root \
+    SPRING_DATASOURCE_PASSWORD=root \
     SPRING_JPA_HIBERNATE_DDL_AUTO=update
 
 # Command to run the application
