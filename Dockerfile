@@ -18,7 +18,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Expose application port
-EXPOSE 9002
+EXPOSE 8080
 
 # Set the environment variables for Spring Boot to use
 ENV SPRING_DATASOURCE_URL=jdbc:mysql://mysqldb:3306/zinterview?serverTimezone=UTC \
