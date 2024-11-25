@@ -5,6 +5,8 @@ WORKDIR /app
 
 RUN echo "This is for testing"
 
+RUN echo "This is for another testing"
+
 # Copy project files to the container
 COPY ./MySpring_Boot_aa23v_VotingApp_Final .
 
