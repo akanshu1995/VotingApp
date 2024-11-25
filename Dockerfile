@@ -3,6 +3,8 @@ FROM maven:3.8.6-eclipse-temurin-17 AS build
 
 WORKDIR /app
 
+RUN echo "This is for testing"
+
 # Copy project files to the container
 COPY ./MySpring_Boot_aa23v_VotingApp_Final .
 
